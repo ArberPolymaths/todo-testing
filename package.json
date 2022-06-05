@@ -9,7 +9,8 @@
     "build": "webpack --mode production",
     "lint": "eslint . --ignore-path .gitignore --ext .js,.jsx,.ts,.tsx",
     "clean": "rm -rf ./dist",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "test": "cucumber-js -f json:cucumber-report.json"
   },
   "keywords": [
     "react",
@@ -20,6 +21,7 @@
   "author": "Itai Lavie",
   "license": "ISC",
   "devDependencies": {
+    "@cucumber/cucumber": "^8.2.2",
     "@types/mini-css-extract-plugin": "^0.9.1",
     "@types/node": "^13.9.4",
     "@types/react": "^16.9.25",
@@ -41,6 +43,8 @@
     "gh-pages": "^3.1.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
+    "jest": "^28.1.0",
+    "jest-puppeteer": "^6.1.0",
     "mini-css-extract-plugin": "^0.9.0",
     "ts-loader": "^6.2.2",
     "ts-node": "^8.8.1",
@@ -55,7 +59,11 @@
     "@types/lodash": "^4.14.163",
     "@types/redux-logger": "^3.0.8",
     "antd": "^4.0.4",
+    "chai": "^4.3.6",
+    "cucumber": "^6.0.7",
     "lodash": "^4.17.20",
+    "puppeteer": "^14.1.1",
+    "puppeteer-core": "^14.1.1",
     "rc-queue-anim": "^1.8.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
