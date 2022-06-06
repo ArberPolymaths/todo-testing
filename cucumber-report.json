@@ -1,29 +1,20 @@
 [
   {
-    "keyword": "Feature",
-    "name": "Add a new task in the Todo app",
-    "line": 1,
-    "id": "add-a-new-task-in-the-todo-app",
-    "tags": [],
-    "uri": "features\\addATask.feature",
+    "description": "",
     "elements": [
       {
+        "description": "",
         "id": "add-a-new-task-in-the-todo-app;add-a-task-with-valid-name",
         "keyword": "Scenario",
         "line": 3,
         "name": "Add a task with valid name",
-        "tags": [],
-        "type": "scenario",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
-            "match": {
-              "location": "features\\support\\addATaskFeature.js:8"
-            },
             "result": {
               "status": "passed",
-              "duration": 657000000
+              "duration": 592461999
             }
           },
           {
@@ -32,11 +23,11 @@
             "line": 4,
             "name": "I want to create a new task with valid name",
             "match": {
-              "location": "features\\support\\addATaskFeature.js:23"
+              "location": "features\\support\\addATaskFeature.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 1223000000
+              "duration": 1219556199
             }
           },
           {
@@ -45,11 +36,11 @@
             "line": 5,
             "name": "I click the Add Button, give valid input in the name field and press Done Button",
             "match": {
-              "location": "features\\support\\addATaskFeature.js:27"
+              "location": "features\\support\\addATaskFeature.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 1946000000
+              "duration": 1933538199
             }
           },
           {
@@ -58,15 +49,23 @@
             "line": 6,
             "name": "This task appears in the Todo list",
             "match": {
-              "location": "features\\support\\addATaskFeature.js:44"
+              "location": "features\\support\\addATaskFeature.js:43"
             },
             "result": {
               "status": "passed",
-              "duration": 390000000
+              "duration": 392347900
             }
           }
-        ]
+        ],
+        "tags": [],
+        "type": "scenario"
       }
-    ]
+    ],
+    "id": "add-a-new-task-in-the-todo-app",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Add a new task in the Todo app",
+    "tags": [],
+    "uri": "features\\addATask.feature"
   }
 ]

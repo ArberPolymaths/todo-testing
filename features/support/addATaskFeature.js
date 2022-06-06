@@ -1,6 +1,5 @@
-const { When, Then, Given, Before, AfterAll } = require("cucumber")
+const { When, Then, Given, Before, AfterAll, setDefaultTimeout } = require("@cucumber/cucumber")
 const puppeteer = require("puppeteer")
-var { setDefaultTimeout } = require('cucumber');
 const { expect } = require("chai");
 
 setDefaultTimeout(60 * 1000);
@@ -51,7 +50,8 @@ Then('This task appears in the Todo list', async function () {
     let listItems = await list.$$(listItemSelector);
     expect(listItems.length).to.equal(1);
 });
+
 AfterAll(async () => {
-    await page.waitForTimeout(4000);
+    await page.waitForTimeout(5000);
     await browser.close();
 });
