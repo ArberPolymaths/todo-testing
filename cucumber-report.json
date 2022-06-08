@@ -1,0 +1,71 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "add-a-new-task-in-the-todo-app;add-a-task-with-valid-name",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Add a task with valid name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 592461999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I want to create a new task with valid name",
+            "match": {
+              "location": "features\\support\\addATaskFeature.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1219556199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I click the Add Button, give valid input in the name field and press Done Button",
+            "match": {
+              "location": "features\\support\\addATaskFeature.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1933538199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "This task appears in the Todo list",
+            "match": {
+              "location": "features\\support\\addATaskFeature.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 392347900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "add-a-new-task-in-the-todo-app",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Add a new task in the Todo app",
+    "tags": [],
+    "uri": "features\\addATask.feature"
+  }
+]
